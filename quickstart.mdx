@@ -1,0 +1,127 @@
+---
+title: Getting Started with Nestor
+description: Set up your Nestor account and create your first documentation project in minutes.
+---
+
+## Prerequisites
+
+Before starting, ensure you have:
+
+- A modern web browser like Chrome or Firefox
+- An active email address for account verification
+- Optional: A GitHub account for seamless project imports
+
+<Callout kind="info">
+
+Nestor works best with browsers supporting WebAssembly for preview rendering. Disable ad blockers if you encounter import issues.
+
+</Callout>
+
+## Sign Up for an Account
+
+Create your Nestor account in under a minute.
+
+<Steps>
+  <Step title="Visit Nestor Dashboard" icon="globe">
+    Navigate to [https://nestor.com](https://nestor.com) and click **Sign Up**.
+  </Step>
+  <Step title="Enter Details" icon="user">
+    Provide your email, full name, and a strong password. Accept the terms of service.
+  </Step>
+  <Step title="Verify Email" icon="mail">
+    Check your inbox for a verification link from `no-reply@nestor.com`. Click it to activate your account.
+  </Step>
+  <Step title="Log In" icon="log-in">
+    Return to the dashboard and sign in with your credentials.
+  </Step>
+</Steps>
+
+## Create Your First Documentation Space
+
+A documentation space organizes all files for a single project.
+
+<Steps>
+  <Step title="New Space" icon="plus">
+    From the dashboard, click **New Space** and enter a name like `My Project Docs`.
+  </Step>
+  <Step title="Set Visibility" icon="eye">
+    Choose **Public** for open access or **Private** for team-only viewing.
+  </Step>
+  <Step title="Customize Settings" icon="settings">
+    Add a description and optional custom domain later via settings.
+  </Step>
+</Steps>
+
+## Import and Set Up Your Project
+
+Nestor supports multiple import methods for quick setup.
+
+<Tabs>
+  <Tab title="GitHub Repo" icon="github">
+    Connect your GitHub account and select a repository containing Markdown files.
+
+    <CodeGroup tabs="Browser,CLI">
+    ````javascript
+    // Example: Repo structure Nestor scans
+    docs/
+    ├── introduction.mdx
+    ├── quickstart.mdx
+    └── api/
+        └── reference.md
+    ````
+
+    ````bash
+    # Optional: Use Nestor CLI for local sync
+    npm install -g @nestor/cli
+    nestor sync ./docs https://nestor.com/spaces/my-project-docs
+    ````
+    </CodeGroup>
+  </Tab>
+  <Tab title="Markdown Upload" icon="upload">
+    Drag and drop `.md` or `.mdx` files directly into the space editor.
+  </Tab>
+  <Tab title="Blank Project" icon="file">
+    Start with a template: Choose **Quickstart**, **API Docs**, or **Changelog**.
+  </Tab>
+</Tabs>
+
+<Callout kind="tip">
+
+After import, Nestor auto-generates a sitemap and search index. Preview changes live without deploying.
+
+</Callout>
+
+## Basic Interface Tour
+
+Familiarize yourself with the core UI elements.
+
+<Columns cols={3}>
+  <Card title="Editor Panel" icon="edit-3" horizontal>
+    Write and preview MDX in real-time. Supports components like `<Callout>` and code blocks.
+  </Card>
+  <Card title="File Tree" icon="git-branch">
+    Navigate your documentation structure. Drag to reorder pages.
+  </Card>
+  <Card title="Publish Button" icon="globe">
+    Deploy instantly to a unique URL like `my-project-docs.nestor.com`.
+  </Card>
+</Columns>
+
+## Next Steps
+
+<Columns cols={2}>
+  <Card title="Authentication" icon="shield" href="/authentication">
+    Secure your spaces with API keys and webhooks.
+  </Card>
+  <Card title="Advanced Customization" icon="settings" href="/configuration">
+    Themes, custom domains, and integrations.
+  </Card>
+  <Card title="Full Documentation" icon="book-open" href="/introduction">
+    Explore all Nestor features.
+  </Card>
+  <Card title="Changelog" icon="git-commit" href="/changelog">
+    Stay updated with latest releases.
+  </Card>
+</Columns>
+
+Congratulations! You now have a live documentation site. Experiment with editing files and share the preview link with your team.

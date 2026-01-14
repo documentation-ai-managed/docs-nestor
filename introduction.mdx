@@ -1,0 +1,124 @@
+---
+title: Welcome to Nestor
+description: Discover Nestor, your default documentation space for organizing and managing project documentation with ease.
+---
+
+## Overview
+
+Nestor provides a centralized space for your project documentation. You create, organize, and publish docs effortlessly. Use it to build knowledge bases, API references, and user guides with version control and search.
+
+<Callout kind="info">
+Nestor integrates with your Git workflow. Changes to docs trigger automatic builds and deployments.
+</Callout>
+
+## Key Benefits
+
+Nestor simplifies documentation management with powerful features.
+
+<Columns cols={3}>
+  <Card title="Version Control" icon="git-branch" href="/docs/version-control">
+    Track changes with Git integration. Collaborate without conflicts.
+  </Card>
+  <Card title="Search & Navigation" icon="search" href="/docs/search">
+    Full-text search finds content instantly. Breadcrumbs guide users.
+  </Card>
+  <Card title="Customizable Themes" icon="palette" href="/docs/themes">
+    Brand your docs with custom colors and layouts.
+  </Card>
+</Columns>
+
+## Quick Start
+
+Get started in minutes.
+
+<Steps>
+  <Step title="Create Account" icon="user-plus">
+    Sign up at `https://dashboard.nestor.app/register`.
+  </Step>
+  <Step title="New Workspace" icon="plus">
+    Click "New Workspace" and name it "My Project Docs".
+  </Step>
+  <Step title="Upload Docs" icon="upload">
+    Connect your Git repo or drag Markdown files.
+
+````markdown
+# Example doc.md
+## Introduction
+Welcome to your first doc.
+````
+
+  </Step>
+  <Step title="Publish" icon="globe">
+    Preview and publish. Share the live URL.
+  </Step>
+</Steps>
+
+## Quick Navigation
+
+Jump to essential sections.
+
+<Columns cols={2}>
+  <Card title="Quickstart Guide" icon="rocket" href="/quickstart">
+    Set up your first workspace.
+  </Card>
+  <Card title="Authentication" icon="lock" href="/authentication">
+    Secure your docs with API keys.
+  </Card>
+  <Card title="Configuration" icon="settings" href="/configuration">
+    Customize your documentation.
+  </Card>
+  <Card title="Changelog" icon="calendar" href="/changelog">
+    See recent updates.
+  </Card>
+</Columns>
+
+## Brand Guidelines
+
+Use Nestor's brand color `#3B82F6` for consistency.
+
+<Tabs>
+  <Tab title="CSS Usage" icon="code">
+    Apply the primary color in your custom themes.
+
+````css
+:root {
+  --nestor-primary: #3B82F6;
+  --nestor-primary-hover: #2563EB;
+}
+
+.button {
+  background-color: var(--nestor-primary);
+  color: white;
+}
+````
+
+  </Tab>
+  <Tab title="Guidelines" icon="file-text">
+    - Primary: `#3B82F6` for buttons and links
+    - Use on white or dark backgrounds
+    - Avoid altering hue; adjust opacity for variants
+
+    <Callout kind="tip">
+      Test accessibility with WCAG tools.
+    </Callout>
+  </Tab>
+</Tabs>
+
+<Expandable title="Advanced Branding" default-open="false">
+  Integrate SVG logos and custom fonts. Refer to `/configuration` for font setup.
+
+````javascript
+// Example theme config
+const theme = {
+  colors: {
+    primary: '#3B82F6'
+  },
+  fonts: {
+    body: 'Inter, sans-serif'
+  }
+};
+````
+
+</Expandable>
+
+Ready to build? Start with the [Quickstart Guide](/quickstart).
